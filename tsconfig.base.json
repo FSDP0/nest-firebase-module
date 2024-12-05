@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    // Compile
+    "module": "CommonJS",
+
+    "baseUrl": ".",
+
+    "noEmit": false,
+
+    "isolatedModules": true,
+
+    "declaration": true,
+    "declarationMap": false,
+
+    "emitDecoratorMetadata": true,
+
+    "removeComments": true,
+    
+    "sourceMap": false,
+
+    // Usage
+    "esModuleInterop": true,
+    
+    "resolveJsonModule": true,
+    
+    "skipLibCheck": true,
+
+    "experimentalDecorators": true,
+
+    "allowSyntheticDefaultImports": true,
+    
+    // Syntax
+    "strict": true,
+
+    "forceConsistentCasingInFileNames": true,
+
+    "noFallthroughCasesInSwitch": true,
+
+    "noImplicitAny": false,
+  },
+  "include": ["src"]
+}
