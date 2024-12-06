@@ -1,6 +1,6 @@
 {
   "name": "@fsdp0/nest-firebase",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "FSDP0 NestJS Firebase Module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
