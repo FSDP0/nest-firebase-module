@@ -11,6 +11,8 @@ export class FirebaseAdminModule {
   private readonly logger = new Logger(FirebaseAdminModule.name);
 
   constructor(private readonly configService: ConfigService) {
-    firebaseSdkAdminInitialize(configService);
+    this.logger.log("\\... Initialize ....");
+
+    firebaseSdkAdminInitialize(this.configService);
   }
 }

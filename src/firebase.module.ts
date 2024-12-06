@@ -2,7 +2,7 @@ import { Module } from "@nestjs/common";
 
 import { FirebaseAdminModule } from "./admin";
 import { FirebaseWebModule } from "./web";
-import { FirebaseAppModule } from "./app/firebase.app.module";
+import { FirebaseAppModule } from "./app";
 import { FirebaseUnityModule } from "./unity";
 
 @Module({
