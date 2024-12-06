@@ -1,7 +1,6 @@
 import { registerAs } from "@nestjs/config";
-import type { ConfigService } from "@nestjs/config";
 
-import { applicationDefault, cert, initializeApp, ServiceAccount } from "firebase-admin/app";
+import type { ServiceAccount } from "firebase-admin/app";
 
 import { FIREBASE_SDK_ADMIN } from "../constant/firebase.admin.constant";
 
@@ -9,16 +8,15 @@ const {
   CONFIG: { NAMESPACE }
 } = FIREBASE_SDK_ADMIN;
 
-export const firebaseSdkAdminInitialize = (configService: ConfigService) => {
-  const serviceAccount: ServiceAccount | undefined = configService.get<ServiceAccount>(
-    NAMESPACE.CREDENTIAL.SERVICE_ACCOUNT
-  );
-
-  console.log(serviceAccount);
-
-  // if (process.env["GOOGLE_APPLICATION_CREDENTIALS"]) {
-  //   return initializeApp({ credential: applicationDefault() });
-  // } else {
-  //   return initializeApp({ credential: cert() });
-  // }
-};
+export const firebaseSdkAdminServiceAccount = registerAs(
+  NAMESPACE.CREDENTIAL.SERVICE_ACCOUNT,
+  (): ServiceAccount => {
+    return {
+      projectId: process.env["FIREBASE_SVC_PROJECT_ID"] ?? undefined,
+      privateKey: process.env["FIREBASE_SVC_PRIVATE_KEY"]
+        ? process.env["FIREBASE_SVC_PRIVATE_KEY"].replace(/\\n/g, "\n")
+        : undefined,
+      clientEmail: process.env["FIREBASE_SVC_CLIENT_EMIAL"] ?? undefined
+    };
+  }
+);

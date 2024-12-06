@@ -283,9 +283,9 @@
     "@babel/types" "^7.25.9"
 
 "@babel/traverse@^7.25.9":
-  version "7.26.3"
-  resolved "http://localhost:18081/repository/npm-local/@babel/traverse/-/traverse-7.26.3.tgz#1ebfc75bd748d8f96b3cc63af5e82ebd4c37ba35"
-  integrity sha512-yTmc8J+Sj8yLzwr4PD5Xb/WF3bOYu2C2OoSZPzbuqRm4n98XirsbzaX+GloeO376UnSYIYJ4NCanwV5/ugZkwA==
+  version "7.26.4"
+  resolved "http://localhost:18081/repository/npm-local/@babel/traverse/-/traverse-7.26.4.tgz#ac3a2a84b908dde6d463c3bfa2c5fdc1653574bd"
+  integrity sha512-fH+b7Y4p3yqvApJALCPJcwb0/XaOSgtK4pzV6WVjPR5GLFQBRI7pfoX2V2iM48NXvX07NUxxm1Vw98YjqTcU5w==
   dependencies:
     "@babel/code-frame" "^7.26.2"
     "@babel/generator" "^7.26.3"
@@ -427,21 +427,10 @@
   dependencies:
     tslib "^2.1.0"
 
-"@fsdp0/common@^0.0.3":
-  version "0.0.3"
-  resolved "http://localhost:18081/repository/npm-hosted/@fsdp0/common/-/common-0.0.3.tgz#572d56276b5fdd3a07a1cb3cf2436846a5a115ea"
-  integrity sha512-GvkPapM8MhBYWyPgXjkLVbmT6FfaqttHQAxXXCXc/734IQ374CFMz6GXlBY6LH1NchJG7p8J3gfd//Ojs7TlLA==
-  dependencies:
-    "@nestjs/common" "^10.0.0"
-    "@nestjs/core" "^10.0.0"
-    "@nestjs/platform-express" "^10.0.0"
-    reflect-metadata "^0.1.13"
-    rxjs "^7.8.1"
-
 "@google-cloud/firestore@^7.10.0":
-  version "7.10.0"
-  resolved "http://localhost:18081/repository/npm-local/@google-cloud/firestore/-/firestore-7.10.0.tgz#fc434f6da583aba48d5532ce322e8c03af1978f8"
-  integrity sha512-VFNhdHvfnmqcHHs6YhmSNHHxQqaaD64GwiL0c+e1qz85S8SWZPC2XFRf8p9yHRTF40Kow424s1KBU9f0fdQa+Q==
+  version "7.11.0"
+  resolved "http://localhost:18081/repository/npm-local/@google-cloud/firestore/-/firestore-7.11.0.tgz#a8a2b61d5069ba23ff2a1b98eac78d15a904a40f"
+  integrity sha512-88uZ+jLsp1aVMj7gh3EKYH1aulTAMFAp8sH/v5a9w8q8iqSG27RiWLoxSAFr/XocZ9hGiWH1kEnBw+zl3xAgNA==
   dependencies:
     "@opentelemetry/api" "^1.3.0"
     fast-deep-equal "^3.1.1"
@@ -835,7 +824,7 @@
     webpack "5.96.1"
     webpack-node-externals "3.0.0"
 
-"@nestjs/common@^10.0.0", "@nestjs/common@^10.4.13":
+"@nestjs/common@^10.4.13":
   version "10.4.13"
   resolved "http://localhost:18081/repository/npm-local/@nestjs/common/-/common-10.4.13.tgz#e53fafaf084740ec3321f16ef6a3ffd597a62ddc"
   integrity sha512-NVJ2UYMRdMkxCcwmoWP8xihpUyd1uqKR+7QqTF3m8aedufpZm8W6WbUmNkD1j/o9TxRzhKW43PemeSMigZj+Bw==
@@ -1904,16 +1893,23 @@ bytes@3.1.2:
   resolved "http://localhost:18081/repository/npm-local/bytes/-/bytes-3.1.2.tgz#8b0beeb98605adf1b128fa4386403c009e0221a5"
   integrity sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==
 
-call-bind@^1.0.7:
-  version "1.0.7"
-  resolved "http://localhost:18081/repository/npm-local/call-bind/-/call-bind-1.0.7.tgz#06016599c40c56498c18769d2730be242b6fa3b9"
-  integrity sha512-GHTSNSYICQ7scH7sZ+M2rFopRoLh8t2bLSW6BbgrtLsahOIB5iyAVJf9GjWK3cYTDaMj4XdBpM1cA6pIS0Kv2w==
+call-bind-apply-helpers@^1.0.0:
+  version "1.0.0"
+  resolved "http://localhost:18081/repository/npm-local/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.0.tgz#33127b42608972f76812a501d69db5d8ce404979"
+  integrity sha512-CCKAP2tkPau7D3GE8+V8R6sQubA9R5foIzGp+85EXCVSCivuxBNAWqcpn72PKYiIcqoViv/kcUDpaEIMBVi1lQ==
   dependencies:
-    es-define-property "^1.0.0"
     es-errors "^1.3.0"
     function-bind "^1.1.2"
+
+call-bind@^1.0.7:
+  version "1.0.8"
+  resolved "http://localhost:18081/repository/npm-local/call-bind/-/call-bind-1.0.8.tgz#0736a9660f537e3388826f440d5ec45f744eaa4c"
+  integrity sha512-oKlSFMcMwpUg2ednkhQ454wfWiU/ul3CkJe/PEHcTKuiX6RpbehUiFMXu13HalGZxfUwCQzZG747YXBn1im9ww==
+  dependencies:
+    call-bind-apply-helpers "^1.0.0"
+    es-define-property "^1.0.0"
     get-intrinsic "^1.2.4"
-    set-function-length "^1.2.1"
+    set-function-length "^1.2.2"
 
 callsites@^3.0.0:
   version "3.1.0"
@@ -2332,9 +2328,9 @@ ejs@^3.1.10:
     jake "^10.8.5"
 
 electron-to-chromium@^1.5.41:
-  version "1.5.68"
-  resolved "http://localhost:18081/repository/npm-local/electron-to-chromium/-/electron-to-chromium-1.5.68.tgz#4f46be4d465ef00e2100d5557b66f4af70e3ce6c"
-  integrity sha512-FgMdJlma0OzUYlbrtZ4AeXjKxKPk6KT8WOP8BjcqxWtlg8qyJQjRzPJzUtUn5GBg1oQ26hFs7HOOHJMYiJRnvQ==
+  version "1.5.71"
+  resolved "http://localhost:18081/repository/npm-local/electron-to-chromium/-/electron-to-chromium-1.5.71.tgz#d8b5dba1e55b320f2f4e9b1ca80738f53fcfec2b"
+  integrity sha512-dB68l59BI75W1BUGVTAEJy45CEVuEGy9qPVVQ8pnHyHMn36PLPPoE1mjLH+lo9rKulO3HC2OhbACI/8tCqJBcA==
 
 emittery@^0.13.1:
   version "0.13.1"
@@ -4869,7 +4865,7 @@ serve-static@1.16.2:
     parseurl "~1.3.3"
     send "0.19.0"
 
-set-function-length@^1.2.1:
+set-function-length@^1.2.2:
   version "1.2.2"
   resolved "http://localhost:18081/repository/npm-local/set-function-length/-/set-function-length-1.2.2.tgz#aac72314198eaed975cf77b2c3b6b880695e5449"
   integrity sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==
@@ -5156,9 +5152,9 @@ terser-webpack-plugin@^5.3.10:
     terser "^5.26.0"
 
 terser@^5.26.0:
-  version "5.36.0"
-  resolved "http://localhost:18081/repository/npm-local/terser/-/terser-5.36.0.tgz#8b0dbed459ac40ff7b4c9fd5a3a2029de105180e"
-  integrity sha512-IYV9eNMuFAV4THUspIRXkLakHnV6XO7FEdtKjf/mDyrnqUg9LnlOn6/RwRvM9SZjR4GUq8Nk8zj67FzVARr74w==
+  version "5.37.0"
+  resolved "http://localhost:18081/repository/npm-local/terser/-/terser-5.37.0.tgz#38aa66d1cfc43d0638fab54e43ff8a4f72a21ba3"
+  integrity sha512-B8wRRkmre4ERucLM/uXx4MOV5cbnOlVAqUst+1+iLKPI0dOgFO28f84ptoQt9HEI537PMzfYa/d+GEPKTRXmYA==
   dependencies:
     "@jridgewell/source-map" "^0.3.3"
     acorn "^8.8.2"
@@ -5524,7 +5520,6 @@ word-wrap@^1.2.5:
   integrity sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
-  name wrap-ansi-cjs
   version "7.0.0"
   resolved "http://localhost:18081/repository/npm-local/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==

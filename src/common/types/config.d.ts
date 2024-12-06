@@ -6,6 +6,8 @@ declare namespace Firebase {
       FIREBASE_SVC_PRIVATE_KEY: string;
 
       FIREBASE_SVC_CLIENT_EMIAL: string;
+
+      FIREBASE_SVC_CREDENTIAL_FILE_PATH: string;
     }
   }
 }
