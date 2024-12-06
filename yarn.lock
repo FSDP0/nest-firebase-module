@@ -427,6 +427,11 @@
   dependencies:
     tslib "^2.1.0"
 
+"@fsdp0/common@^0.0.4":
+  version "0.0.4"
+  resolved "http://localhost:18081/repository/npm-hosted/@fsdp0/common/-/common-0.0.4.tgz#28bf23dc7f7a3ea5272250f996f437e1a1d5c3ac"
+  integrity sha512-YBuiZSK3HxXjt0u/3FxETSpTRIBHGfDLntY++/xwMUsaKyH1v0XfR16KBMRZG9pJ1lKITMsHfNoBBH0w/65Ukw==
+
 "@google-cloud/firestore@^7.10.0":
   version "7.11.0"
   resolved "http://localhost:18081/repository/npm-local/@google-cloud/firestore/-/firestore-7.11.0.tgz#a8a2b61d5069ba23ff2a1b98eac78d15a904a40f"
