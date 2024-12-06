@@ -4,7 +4,6 @@ import { applicationDefault, cert, initializeApp } from "firebase-admin/app";
 import type { Credential, ServiceAccount } from "firebase-admin/app";
 
 import { FIREBASE_SDK_ADMIN } from "../constant/firebase.admin.constant";
-import { isObjectEmpty } from "@fsdp0/common";
 
 const {
   CONFIG: { NAMESPACE }
@@ -27,7 +26,7 @@ export function firebaseSdkAdminInitialize(configService: ConfigService) {
         NAMESPACE.CREDENTIAL.SERVICE_ACCOUNT
       );
 
-      if (serviceAccount && !isObjectEmpty(serviceAccount as object)) {
+      if (serviceAccount !== undefined) {
         credential = cert(serviceAccount);
       } else {
         throw Error("Error occured when initalize firebase service");
